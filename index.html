@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caacupe+One&family=Doppio+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playwrite+NZ+Basic:wght@100..400&family=Playwrite+NZ+Guides&family=Rubik+Spray+Paint&family=Skranji:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section>
+
+        <nav id="nav">
+            <h1> <span>AboEl</span>Houl Hospital<i class="fa-regular fa-hospital" style="color:#4C8B92;"></i></h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#doctors-section">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <a href="#" id="nav-link">Book Appointment</a>
+            <i onclick="dark()" id="dark" class="fa-solid fa-moon fa-float" style="color:#4C8B92"></i>
+        </nav>
+
+        <main id="home">
+            <div class="main-content">
+                <div class="main-text">
+                    <h1>Your Health, <br>
+                        Our Priority
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aspernatur accusamus, quam quia
+                        veniam quas cumque omnis fugiat exercitationem dolor.</p>
+                </div>
+
+                <div class="main-image">
+                    <img src="pho/WhatsApp Image 2026-09-12 at 10.15.42.jpeg" alt="">
+                </div>
+
+                <div class="booknow">
+
+                    <div class="department">
+                        <h3>Department</h3>
+                        <select id="department">
+                            <option id="option2" value="" disabled selected>Department</option>
+                            <option value="emergency">Emergency Care</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="dentistry">Dentistry</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                        </select>
+                    </div>
+
+                    <div class="doctors">
+                        <h3>Doctor</h3>
+                        <select id="doctors">
+                            <option id="option" value="" disabled selected>Doctor</option>
+
+
+                        </select>
+                    </div>
+
+
+                    <div class="date">
+                        <h3>Date</h3>
+                        <input type="date" id="date">
+                    </div>
+
+                    <a href="#" id="bookm" onclick="boo()">Book Now</a>
+                    <!-- <button class="btn btn-outline-dark">Book Noow</button> -->
+
+                </div>
+
+
+            </div>
+
+        </main>
+    </section>
+
+
+
+    <section id="services">
+        <h2>Featured Services</h2>
+
+
+        <div class="cards" id="serv">
+            <!-- 1 -->
+            <div class="card" style="width: 300px;">
+                <img src="pho/AD.jpeg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Advanced Diagnosics</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="card" style="width: 300px;">
+                <img src="pho/EC.jpeg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Emergency Care</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card" style="width: 300px;">
+                <img src="pho/ML.jpeg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Medical Laboratory</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 300px;">
+                <img src="pho/NC.jpeg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Neonatal Care</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-all">
+            <a href="#">View All Services </a>
+            <i class="fa-solid fa-arrow-right" style="color:#1765a5"></i>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="departments">
+        <h2>Departments</h2>
+        <div class="logos-imgs">
+
+
+            <!-- 1 -->
+            <div id="lo">
+                <img src="pho/Cardiology.jpeg" alt="">
+                <div id="txt">
+                    <h4>cardiology</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+            <div id="lo">
+                <img src="pho/pediatrics.jpeg" alt="">
+                <div id="txt">
+                    <h4>pediatrics</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div id="lo">
+                <img src="pho/Dentistry.jpeg" alt="">
+                <div id="txt">
+                    <h4>Dentistry</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </div>
+            <!-- 4 -->
+            <div id="lo">
+                <img src="pho/neau.jpeg" alt="">
+
+                <div id="txt">
+                    <h4>Neurology</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </div>
+            <!-- 5-->
+            <div id="lo">
+                <img src="pho/bones.jpeg" alt="">
+
+                <div id="txt">
+
+                    <h4>Orthopedics</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="doctors-section">
+        <h2>Doctors</h2>
+        <div class="doctors-cards">
+
+            <!-- 1 -->
+            <div class="card">
+                <img src="pho/dr3.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Dr. Ahmed</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook" style="color:#1765a5;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1765a5;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1765a5;"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="card" >
+                <img src="pho/dr1.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Dr. Sara</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook" style="color:#1765a5;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1765a5;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1765a5;"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+
+            <div class="card" >
+                <img src="pho/dr7.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Dr. Omar</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook" style="color:#1765a5;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1765a5;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1765a5;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- 4 -->
+            <div class="card" >
+                <img src="pho/dr6.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Dr. Mariam</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook" style="color:#1765a5;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1765a5;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1765a5;"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+
+
+
+            <div class="card" >
+                <img src="pho/mos.jpeg" class="card-img" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Dr. Mostafa</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook" style="color:#1765a5;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1765a5;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1765a5;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <section id="contact">
+
+        <h1>Contact Us</h1>
+        <p id="details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ea placeat obcaecati ullam
+            accusamus earum!
+        </p>
+
+
+
+        <div id="all">
+
+            <div class="info">
+
+
+                <div class="phone">
+                    <h3>PHONE <i class="fa-solid fa-phone" style="color:#1765a5"></i></h3>
+                    <p>+152454548</p>
+                </div>
+
+                <div class="email">
+                    <h3>EMAIL<i class="fa-regular fa-envelope" style="color:#1765a5"></i></h3>
+                    <p>nileon@gmail.com</p>
+                </div>
+
+                <div class="adress">
+                    <h3>ADRESS<i class="fa-solid fa-location-dot" style="color:#1765a5;"></i></h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div id="form">
+                <div id="name">
+                    <label for="text">Name</label><br>
+                    <input type="text" id="text">
+                </div>
+                <div id="email">
+                    <label for="em">Email</label><br>
+                    <input type="email" id="em">
+                </div>
+                <div id="massage">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <div id="send">
+                    <a href="#" id="sen" onclick="sure()">Send Massage</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="last.js"></script>
+
+</body>
+
+</html>
